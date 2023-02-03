@@ -4,10 +4,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.xiongtao.jetpack.R
 
-class MainActivity1: AppCompatActivity() {
+class LifeCycleActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_activity1)
+        setContentView(R.layout.activity_lifecycle)
         lifecycle.addObserver(MyLifecycleObserver())
         lifecycle.addObserver(MyLifecycleObserver2())
     }

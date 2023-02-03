@@ -1,6 +1,8 @@
 package com.xiongtao.jetpack.lifecycle
 
+import android.content.Context
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
@@ -18,4 +20,6 @@ class MyLifecycleObserver : LifecycleObserver {
     fun onStop(@NotNull owner: LifecycleOwner) {
         Log.i("MyLifecycleObserver", "activity onStop")
     }
+
+
 }

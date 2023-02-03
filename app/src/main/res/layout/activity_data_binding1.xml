@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="star"
+            type="com.xiongtao.jetpack.databinding.java.Star" />
+        <variable
+            name="action"
+            type="com.xiongtao.jetpack.databinding.java.DataBindingActivity1.ButtonAction" />
+
+        <variable
+            name="star2"
+            type="com.xiongtao.jetpack.databinding.java.Star2" />
+
+        <variable
+            name="arrayMap"
+            type="androidx.databinding.ObservableArrayMap&lt;String,Object&gt;" />
+
+        <variable
+            name="star3"
+            type="com.xiongtao.jetpack.databinding.java.Star3" />
+
+        <variable
+            name="star4"
+            type="com.xiongtao.jetpack.databinding.java.Star4ViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{star.name,default=admin}"
+            />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{""+star.fans}'
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击修改"
+            android:onClick="@{()->action.addFans()}"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{star2.name,default=admin}"
+            />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{""+star2.fans}'
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击修改"
+            android:onClick="@{()->action.addFans2()}"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{arrayMap["name"],default=admin}'
+            />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{""+arrayMap["fans"]}'
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击修改"
+            android:onClick="@{()->action.addFans3()}"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{star3.name}'
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={star3.name}"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{star4.mutableLiveData.name,default=admin}'
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{""+star4.mutableLiveData.fans}'
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击修改"
+            android:onClick="@{()->star4.addFans()}"/>
+
+    </LinearLayout>
+</layout>

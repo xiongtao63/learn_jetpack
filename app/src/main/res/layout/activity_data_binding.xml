@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CustomBinding">
+        <import type="com.xiongtao.jetpack.databinding.User"/>
+
+        <variable
+            name="userInfo"
+            type="User" />
+        <import type="com.xiongtao.jetpack.databinding.Funs"/>
+        <import alias="temp" type="com.xiongtao.jetpack.databinding.model.User"/>
+        <variable
+            name="tempUserinfo"
+            type="temp" />
+        <variable
+            name="funs"
+            type="Funs" />
+        <variable
+            name="action"
+            type="com.xiongtao.jetpack.databinding.DataBindingActivity.ButtonAction" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".databinding.DataBindingActivity"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{userInfo.name,default=admin}"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{userInfo.password,default=123456}"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{funs.name,default=admin}"
+            />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{funs.number,default=123456}"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->action.addFuns()}"/>
+
+    </LinearLayout>
+</layout>
