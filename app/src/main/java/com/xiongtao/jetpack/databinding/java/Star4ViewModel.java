@@ -15,12 +15,10 @@ public class Star4ViewModel extends ViewModel {
 //    }
 
     public void addFans(){
-        System.out.println("==========");
+
         Star4 star4 = mutableLiveData.getValue();
-        System.out.println("=========="+star4.getFans());
         int i = star4.getFans() + 1000;
         star4.setFans(i);
-        System.out.println("=========="+star4.getFans());
         mutableLiveData.postValue(star4);
     }
 }

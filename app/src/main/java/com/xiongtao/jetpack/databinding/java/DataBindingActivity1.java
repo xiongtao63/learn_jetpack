@@ -6,8 +6,10 @@ import androidx.databinding.ObservableArrayMap;
 import androidx.databinding.ObservableField;
 import androidx.databinding.ViewDataBinding;
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Observer;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.xiongtao.jetpack.R;
 import com.xiongtao.jetpack.databinding.ActivityDataBinding1Binding;
@@ -45,8 +47,12 @@ public class DataBindingActivity1 extends AppCompatActivity {
         star4VM = new Star4ViewModel();
         star4VM.mutableLiveData.setValue(new Star4("dsfds",20302));
         binding1Binding.setStar4(star4VM);
-
-
+        star4VM.mutableLiveData.observe(this, new Observer<Star4>() {
+            @Override
+            public void onChanged(Star4 star4) {
+                binding1Binding.setStar4(star4VM);
+            }
+        });
 
     }
 
