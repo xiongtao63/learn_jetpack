@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">learn_jetpack</string>
+    <string name="format">%s is %s</string>
 </resources>

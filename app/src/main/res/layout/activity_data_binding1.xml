@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="star"
             type="com.xiongtao.jetpack.databinding.java.Star" />
+
         <variable
             name="action"
             type="com.xiongtao.jetpack.databinding.java.DataBindingActivity1.ButtonAction" />
@@ -26,93 +29,212 @@
         <variable
             name="star4"
             type="com.xiongtao.jetpack.databinding.java.Star4ViewModel" />
+
+        <import type="com.xiongtao.jetpack.databinding.java.Image" />
+
+        <variable
+            name="image"
+            type="Image" />
+
+        <import type="java.util.List" />
+
+        <import type="java.util.Map" />
+
+        <import type="java.util.Set" />
+
+        <import type="android.util.SparseArray" />
+
+        <variable
+            name="array"
+            type="String[]" />
+
+        <variable
+            name="list"
+            type="List&lt;String&gt;" />
+
+        <variable
+            name="map"
+            type="Map&lt;String, String&gt;" />
+
+        <variable
+            name="set"
+            type="Set&lt;String&gt;" />
+
+        <variable
+            name="sparse"
+            type="SparseArray&lt;String&gt;" />
+
+        <variable
+            name="index"
+            type="int" />
+
+        <variable
+            name="key"
+            type="String" />
+
+        <variable
+            name="flag"
+            type="boolean" />
     </data>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="30dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@{star.name,default=admin}"
-            />
-        <TextView
-            android:id="@+id/tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text='@{""+star.fans}'
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="点击修改"
-            android:onClick="@{()->action.addFans()}"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{star.name,default=admin}" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{""+star.fans}' />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->action.addFans()}"
+                android:text="点击修改" />
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@{star2.name,default=admin}"
-            />
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text='@{""+star2.fans}'
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="点击修改"
-            android:onClick="@{()->action.addFans2()}"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text='@{arrayMap["name"],default=admin}'
-            />
-        <TextView
-            android:id="@+id/tv3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text='@{""+arrayMap["fans"]}'
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="点击修改"
-            android:onClick="@{()->action.addFans3()}"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{star2.name,default=admin}" />
 
-        <TextView
-            android:id="@+id/tv4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text='@{star3.name}'
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@={star3.name}"
-            />
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{""+star2.fans}' />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text='@{star4.mutableLiveData.name,default=admin}'
-            />
-        <TextView
-            android:id="@+id/fans"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text='@{""+star4.mutableLiveData.fans}'
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="点击修改"
-            android:onClick="@{()->star4.addFans()}"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->action.addFans2()}"
+                android:text="点击修改" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{arrayMap["name"],default=admin}' />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{""+arrayMap["fans"]}' />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->action.addFans3()}"
+                android:text="点击修改" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{star3.name}' />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={star3.name}" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{star4.mutableLiveData.name,default=admin}' />
+
+            <TextView
+                android:id="@+id/fans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{""+star4.mutableLiveData.fans}' />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->star4.addFans()}"
+                android:text="点击修改" />
+
+            <ImageView
+
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background"
+                bind:url="@{star.name}" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background='@{"红色"}'
+                android:padding="20dp"
+                android:text="红色背景蓝色字"
+                android:textColor='@{"蓝色"}' />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background='@{"蓝色"}'
+                android:padding="20dp"
+                android:text="蓝色背景红色字"
+                android:textColor='@{"红色"}' />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{array[1]}" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{sparse[index]}" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{list[index]}" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{map[key]}" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{map["leavesC"]}' />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{set.contains("xxx")?"xxx":key}' />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:paddingLeft="@{flag ? @dimen/paddingBig:@dimen/paddingSmall}"
+                android:text='@{@string/format("1231","dsfds")}'
+                android:textAllCaps="false"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/purple_200"/>
+        </LinearLayout>
+    </ScrollView>
+
 </layout>
