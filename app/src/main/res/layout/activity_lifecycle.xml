@@ -4,9 +4,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="30dp">
-    <TextView
+    <Button
+        android:id="@+id/bt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text="使用lifecycle 解耦页面组件"/>
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用lifecycleService 解耦service组件"/>
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用processlifecycleowner监听应用程序周期"/>
+
+
 
 </LinearLayout>

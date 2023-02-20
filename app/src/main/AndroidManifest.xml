@@ -2,13 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.xiongtao.jetpack">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Learn_jetpack">
+        <activity
+            android:name=".livedata.LiveData2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".livedata.LiveDataActivity"
+            android:exported="true" />
+        <activity
+            android:name=".viewmodel.ViewModelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".lifecycle.LifeCycle3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".lifecycle.LifeCycle2Activity"
+            android:exported="true" />
         <activity
             android:name=".databinding.java.DataBindingActivity1"
             android:exported="true" />
@@ -25,6 +44,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".lifecycle.LifeCycleActivity" />
+        <activity android:name=".lifecycle.LifeCycle1Activity" />
+
+        <service android:name=".lifecycle.MyLocationService" />
     </application>
 
 </manifest>
