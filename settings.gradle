@@ -8,3 +8,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "learn_jetpack"
 include ':app'
+include ':dagger2'
+include ':custom_dagger2'
+include ':use_custom_dagger2'
+
+include ':annotation'
+include ':lib'
