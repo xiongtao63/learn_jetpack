@@ -21,6 +21,9 @@
       <module name="learn_jetpack.app" target="11" />
       <module name="learn_jetpack.custom_dagger2" target="11" />
       <module name="learn_jetpack.dagger2" target="11" />
+      <module name="learn_jetpack.hileusesimple" target="11" />
+      <module name="learn_jetpack.httprequest_hilt" target="11" />
+      <module name="learn_jetpack.httprequest_proxy" target="11" />
       <module name="learn_jetpack.use_custom_dagger2" target="11" />
     </bytecodeTargetLevel>
   </component>

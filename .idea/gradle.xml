@@ -15,6 +15,9 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/custom_dagger2" />
             <option value="$PROJECT_DIR$/dagger2" />
+            <option value="$PROJECT_DIR$/hileusesimple" />
+            <option value="$PROJECT_DIR$/httprequest_hilt" />
+            <option value="$PROJECT_DIR$/httprequest_proxy" />
             <option value="$PROJECT_DIR$/lib" />
             <option value="$PROJECT_DIR$/use_custom_dagger2" />
           </set>
