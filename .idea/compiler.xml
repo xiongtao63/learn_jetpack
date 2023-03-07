@@ -26,6 +26,8 @@
       <module name="learn_jetpack.httprequest_hilt" target="11" />
       <module name="learn_jetpack.httprequest_proxy" target="11" />
       <module name="learn_jetpack.ioc_annotation" target="11" />
+      <module name="learn_jetpack.lifecycle_demo" target="11" />
+      <module name="learn_jetpack.livedata_demo" target="11" />
       <module name="learn_jetpack.use_custom_dagger2" target="11" />
     </bytecodeTargetLevel>
   </component>
