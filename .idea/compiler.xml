@@ -22,13 +22,16 @@
       <module name="learn_jetpack.custom_dagger2" target="11" />
       <module name="learn_jetpack.custom_ioc_annotation" target="11" />
       <module name="learn_jetpack.dagger2" target="11" />
+      <module name="learn_jetpack.databinding_demo" target="11" />
       <module name="learn_jetpack.hileusesimple" target="11" />
       <module name="learn_jetpack.httprequest_hilt" target="11" />
       <module name="learn_jetpack.httprequest_proxy" target="11" />
       <module name="learn_jetpack.ioc_annotation" target="11" />
+      <module name="learn_jetpack.jetpack_demo1" target="11" />
       <module name="learn_jetpack.lifecycle_demo" target="11" />
       <module name="learn_jetpack.livedata_demo" target="11" />
       <module name="learn_jetpack.use_custom_dagger2" target="11" />
+      <module name="learn_jetpack.viewbinding" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

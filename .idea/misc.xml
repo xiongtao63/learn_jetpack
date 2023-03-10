@@ -23,13 +23,30 @@
         <entry key="..\:/AndroidProject/learn_jetpack/custom_ioc_annotation/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/AndroidProject/learn_jetpack/dagger2/src/main/res/layout/activity_main.xml" value="0.20885416666666667" />
         <entry key="..\:/AndroidProject/learn_jetpack/dagger2/src/main/res/layout/activity_main2.xml" value="0.20885416666666667" />
+        <entry key="..\:/AndroidProject/learn_jetpack/databinding_demo/src/main/res/layout/activity_main.xml" value="0.10157041540020263" />
+        <entry key="..\:/AndroidProject/learn_jetpack/databinding_demo/src/main/res/layout/activity_main2.xml" value="0.19427083333333334" />
         <entry key="..\:/AndroidProject/learn_jetpack/hileusesimple/src/main/res/layout/activity_main.xml" value="0.20885416666666667" />
         <entry key="..\:/AndroidProject/learn_jetpack/httprequest_hilt/src/main/res/layout/activity_main.xml" value="0.20885416666666667" />
         <entry key="..\:/AndroidProject/learn_jetpack/httprequest_proxy/src/main/res/layout/activity_main.xml" value="0.20885416666666667" />
+        <entry key="..\:/AndroidProject/learn_jetpack/jetpack_demo1/src/main/res/drawable/button_selector_collection.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProject/learn_jetpack/jetpack_demo1/src/main/res/drawable/button_selector_contacts.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProject/learn_jetpack/jetpack_demo1/src/main/res/drawable/button_selector_phone.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProject/learn_jetpack/jetpack_demo1/src/main/res/drawable/ic_launcher_background.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProject/learn_jetpack/jetpack_demo1/src/main/res/drawable/phone_selector_backspace.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProject/learn_jetpack/jetpack_demo1/src/main/res/drawable/phone_selector_call.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProject/learn_jetpack/jetpack_demo1/src/main/res/drawable/phone_selector_min.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProject/learn_jetpack/jetpack_demo1/src/main/res/drawable/phone_selector_number.xml" value="0.19814814814814816" />
+        <entry key="..\:/AndroidProject/learn_jetpack/jetpack_demo1/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidProject/learn_jetpack/livedata_demo/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/AndroidProject/learn_jetpack/livedata_demo/src/main/res/layout/activity_main2.xml" value="0.20885416666666667" />
         <entry key="..\:/AndroidProject/learn_jetpack/livedata_demo/src/main/res/layout/activity_main3.xml" value="0.20885416666666667" />
         <entry key="..\:/AndroidProject/learn_jetpack/livedata_demo/src/main/res/layout/activity_main4.xml" value="0.20885416666666667" />
+        <entry key="..\:/AndroidProject/learn_jetpack/viewbinding/src/main/res/layout/activity_main.xml" value="0.20885416666666667" />
+        <entry key="..\:/AndroidProject/learn_jetpack/viewbinding/src/main/res/layout/activity_main2.xml" value="0.20885416666666667" />
+        <entry key="..\:/AndroidProject/learn_jetpack/viewbinding/src/main/res/layout/activity_main3.xml" value="0.20885416666666667" />
+        <entry key="..\:/AndroidProject/learn_jetpack/viewbinding/src/main/res/layout/fragment_blank.xml" value="0.20885416666666667" />
+        <entry key="..\:/AndroidProject/learn_jetpack/viewbinding/src/main/res/layout/fragment_blank2.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/learn_jetpack/viewbinding/src/main/res/layout/test.xml" value="0.20885416666666667" />
         <entry key="..\:/androidProject/learn_jetpack/app/src/main/res/layout/main_activity1.xml" value="0.1" />
       </map>
     </option>
