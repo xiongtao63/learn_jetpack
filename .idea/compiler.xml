@@ -19,6 +19,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="learn_jetpack.app" target="11" />
+      <module name="learn_jetpack.architecture" target="11" />
       <module name="learn_jetpack.custom_dagger2" target="11" />
       <module name="learn_jetpack.custom_ioc_annotation" target="11" />
       <module name="learn_jetpack.dagger2" target="11" />
@@ -31,9 +32,11 @@
       <module name="learn_jetpack.lifecycle_demo" target="11" />
       <module name="learn_jetpack.livedata_demo" target="11" />
       <module name="learn_jetpack.navigation_demo" target="11" />
+      <module name="learn_jetpack.puremusic" target="11" />
       <module name="learn_jetpack.room_demo" target="11" />
       <module name="learn_jetpack.use_custom_dagger2" target="11" />
       <module name="learn_jetpack.viewbinding" target="11" />
+      <module name="learn_jetpack.workmanager_demo" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
