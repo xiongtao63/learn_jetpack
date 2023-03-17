@@ -27,5 +27,4 @@ include ':jetpack_demo1'
 include ':room_demo'
 include ':navigation_demo'
 include ':workmanager_demo'
-include ':architecture'
-include ':puremusic'
+
